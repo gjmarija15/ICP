@@ -1,16 +1,17 @@
 # Vesna Stojanova: LinkedIn profile for the Shoutt campaign
 
 ## Headline (recommended)
-Partnerships at Shoutt | Fintech, SaaS and the people building them
+Talent Partner at Shoutt | Fewer CVs, better conversations
 
 Alternatives:
-- Partnerships at Shoutt | Curious about how great teams come together
-- Shoutt | Building something new in London | Fintech and SaaS
+- Talent Partner at Shoutt | Quality over quantity
+- Talent Partner at Shoutt | Real people behind the AI
+- Talent Partner at Shoutt | Fintech and SaaS teams in the UK and US
 
-No "helping", "recruiting", "hiring" or "talent", so she doesn't read as an agency recruiter.
+No "helping", "recruiting" or "hiring", so she doesn't read as an agency recruiter.
 
 ## Experience entry
-- Title: Partnerships (alternative: Partnerships Manager)
+- Title: Talent Partner
 - Company: Shoutt (link the Shoutt company page so the logo shows)
 - Location: London, England, United Kingdom · Remote
 - Start date: October 2026 · Present
