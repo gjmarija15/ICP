@@ -1,11 +1,11 @@
 # Vesna Stojanova: LinkedIn profile for the Shoutt campaign
 
 ## Headline (recommended)
-Talent Partner at Shoutt | Helping UK and US teams meet the right candidates, faster
+Talent Partner at Shoutt | Tech hiring in the UK and US
 
 Alternatives:
-- Talent Partner at Shoutt | Talking with hiring managers about what makes hiring work
-- Talent Partner at Shoutt | Hiring, recruitment and growing teams in the UK and US
+- Talent Partner at Shoutt | Recruitment and tech hiring
+- Talent Partner at Shoutt | Hiring, talent and team growth
 
 ## Experience entry
 - Title: Talent Partner (alternative: Employer Partnerships)
