@@ -4,8 +4,8 @@
 Talent Partner at Shoutt | Fewer CVs, better conversations
 
 Alternatives:
-- Talent Partner at Shoutt | Quality over quantity
-- Talent Partner at Shoutt | Real people behind the AI
+- Talent Partner at Shoutt | 3 great candidates, not 300 applications
+- Talent Partner at Shoutt | AI-scored, human-checked shortlists
 - Talent Partner at Shoutt | Fintech and SaaS teams in the UK and US
 
 No "helping", "recruiting" or "hiring", so she doesn't read as an agency recruiter.
