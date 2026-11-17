@@ -1,6 +1,6 @@
-# Unit of Measure – Claude in Chrome prompt: qualify Martin's 1st-degree contacts for the Darrix campaign
+﻿# Unit of Measure - Claude in Chrome prompt: qualify Martin's 1st-degree contacts for the Darrix campaign
 
-## 1. Set up the search first (before starting Claude)
+## 1. Set up the search first (for you, before starting Claude)
 
 Run three searches in Martin's Sales Navigator, one at a time, each in its own Claude chat. Use these filters in all three:
 
@@ -12,25 +12,25 @@ Run three searches in Martin's Sales Navigator, one at a time, each in its own C
 
 Do not exclude the Marketing, Customer Success and Support, Administrative or Consulting functions. LinkedIn guesses functions from titles, and PIM, MDM and STEP admin roles are often filed there.
 
-**Search A – PIM, MDM and data roles.** Current job title:
+**Search A - PIM, MDM and data roles.** Current job title:
 ```
 ("STEP" OR "Stibo" OR "PIM" OR "PXM" OR "MDM" OR "Master Data" OR "Masterdata" OR "Stammdaten" OR "Stamdata" OR "Grunddata" OR "Produktdaten" OR "Produktdata" OR "Productdata" OR "Produktinformation" OR "Productinformatie" OR "Referentiel" OR "Référentiel" OR "Données" OR "Datos Maestros" OR "Maestro" OR "Dados Mestres" OR "Anagrafica" OR "Product Information" OR "Product Data" OR "Product Content" OR "PDM" OR "Catalog" OR "Catalogue" OR "DAM" OR "Digital Asset" OR "Data Management" OR "Data Governance" OR "Data Quality" OR "Data Steward" OR "Data Owner" OR "Data Manager" OR "Head of Data" OR "Chief Data" OR "Information Management") NOT ("Freelance" OR "Mobile Device Management")
 ```
 
-**Search B – application, platform and IT roles.** Current job title:
+**Search B - application, platform and IT roles.** Current job title:
 ```
 ("Application Manager" OR "Applications Manager" OR "Application Owner" OR "Application Specialist" OR "Applications Specialist" OR "Application Lead" OR "Business Application" OR "Business Applications" OR "Business Systems" OR "Platform Owner" OR "Platform Manager" OR "Platform Lead" OR "Solution Owner" OR "System Owner" OR "Product Owner" OR "System Administrator" OR "Systems Administrator" OR "Solution Architect" OR "Data Architect" OR "Enterprise Architect" OR "Integration Architect" OR "Technical Lead" OR "Tech Lead" OR "IT Manager" OR "Head of IT" OR "IT Director" OR "CIO" OR "IT Business Partner") NOT ("STEP" OR "Stibo" OR "PIM" OR "MDM" OR "Master Data" OR "Product Information" OR "Product Data" OR "Freelance" OR "Mobile Device Management")
 ```
 
-**Search C – anyone else who mentions Stibo.** No title filter. Keywords: `Stibo`
+**Search C - anyone else who mentions Stibo.** No title filter. Keywords: `Stibo`
 
 If Sales Navigator rejects or cuts a boolean, split it in half and run the halves as separate searches.
 
 **Before you paste the prompt:**
-- Paste the full company list from `Unit of Measure - STEP customer companies.txt` at the marked place at the bottom (or open it as a Google Doc in another tab and tell Claude which tab).
+- Give Claude the STEP customer list. Either paste the company columns (A, E and K) from your CSV at the marked place at the bottom of the prompt, or open the list as a Google Sheet in another tab and tell Claude which tab. Paste only those three columns, not the whole CSV: the other columns (websites, LinkedIn page links, search strings) only make the prompt longer.
 - For Search B, Search C, or any new chat after the first, also paste the "already reviewed" log from the previous chat at the marked place, so Claude skips those people and keeps the 4-per-company count.
 
-## 2. LinkedIn safety (read before running)
+## 2. LinkedIn safety (for you, read before running)
 
 LinkedIn does not publish its limits, so these numbers are conservative estimates, not official figures:
 
@@ -41,7 +41,7 @@ LinkedIn does not publish its limits, so these numbers are conservative estimate
 
 ---
 
-## 3. Prompt to paste into Claude in Chrome
+## 3. Prompt to paste into Claude in Chrome (only the part inside the box)
 
 ```
 You are helping me qualify leads in Sales Navigator for a LinkedIn campaign from Martin Kjeldsen. This is Martin's own LinkedIn account, and keeping it safe from restrictions is more important than speed. Follow the SAFETY rules below at all times.
@@ -71,12 +71,12 @@ Company names on LinkedIn are often written differently from our list. Treat the
 Count all entities of one group as ONE company for the per-company limit.
 Do not match companies that only share a common word (e.g. "Delta" the airline vs "Delta Electronics").
 If you are not sure whether a company belongs to a group on the list, check the LinkedIn company page (description, parent company or "Affiliated pages") once. If it is still unclear, mark the person Maybe with the note "company match unsure".
-In the CSV, matched_step_customer is the name exactly as it appears on our list, and company_name is the short natural name the person's company is known by.
+In the CSV, matched_step_customer is the name exactly as it appears on our list (and which column: A, E or K), and company_name is the short natural name the person's company is known by.
 
 TIERS (best first)
-Tier 1 – owns or runs the STEP platform: STEP / PIM / MDM Platform Owner, Product Owner STEP / PIM / MDM (when it means the system), Application Manager or Application Owner STEP / PIM / MDM, STEP Administrator, PIM or MDM System Administrator, PIM / MDM / STEP Solution or Technical Architect, MDM or PIM Technical Lead, Lead STEP Developer, Team Lead or IT Manager for PIM / MDM applications, Head of PIM / MDM / PDM Applications. Also any title in another language with the same meaning.
-Tier 2 – business owner who answers for the PIM / MDM system and its team: Head of PIM, PIM Manager, Head of MDM, MDM Manager, Master Data Manager, Head of Product Data Management, Head of Product Information. Only if the profile shows they lead the PIM / MDM function or own the system, not just manage content.
-Tier 3 – data governance: Head of Data Governance, Data Governance Manager, Master Data Governance Lead, Data Quality Manager. Use Tier 3 only when the company has fewer than 4 people in Tiers 1-2, and only if their profile mentions MDM, PIM, STEP or master data.
+Tier 1 - owns or runs the STEP platform: STEP / PIM / MDM Platform Owner, Product Owner STEP / PIM / MDM (when it means the system), Application Manager or Application Owner STEP / PIM / MDM, STEP Administrator, PIM or MDM System Administrator, PIM / MDM / STEP Solution or Technical Architect, MDM or PIM Technical Lead, Lead STEP Developer, Team Lead or IT Manager for PIM / MDM applications, Head of PIM / MDM / PDM Applications. Also any title in another language with the same meaning.
+Tier 2 - business owner who answers for the PIM / MDM system and its team: Head of PIM, PIM Manager, Head of MDM, MDM Manager, Master Data Manager, Head of Product Data Management, Head of Product Information. Only if the profile shows they lead the PIM / MDM function or own the system, not just manage content.
+Tier 3 - data governance: Head of Data Governance, Data Governance Manager, Master Data Governance Lead, Data Quality Manager. Use Tier 3 only when the company has fewer than 4 people in Tiers 1-2, and only if their profile mentions MDM, PIM, STEP or master data.
 
 ALWAYS SKIP
 - Marketing, brand, communication, e-commerce content, sales and customer service roles, unless the description clearly shows they own or run the PIM / STEP system.
@@ -90,7 +90,7 @@ ALWAYS SKIP
 UP TO 4 PEOPLE PER COMPANY
 - Keep a running count of Targets per STEP customer company (count group entities together), including companies in the ALREADY REVIEWED log.
 - A company can have at most 4 Targets. Ideally that includes at least one owner (Tier 1 or 2) and one technical person (Tier 1).
-- Once a company has 4 Targets, it is full: do not add anyone else from it. If the search result card already shows that a person works at a full company, mark them "Skip – company full" without opening their profile.
+- Once a company has 4 Targets, it is full: do not add anyone else from it. If the search result card already shows that a person works at a full company, mark them "Skip - company full" without opening their profile.
 - Targets already sent to me in a batch are final.
 
 DECISIONS
@@ -120,21 +120,27 @@ BATCHES AND CSV
   - Put quotes around any value that contains a comma.
 - After the CSV, also give me:
   1. A short table of the Maybe people from this batch (name, company, title, URL, reason).
-  2. The ALREADY REVIEWED log: one line per person reviewed so far in this chat, with their decision ("Name – Company – Decision"), and the Target count per company. I will paste this into the next chat.
+  2. The ALREADY REVIEWED log: one line per person reviewed so far in this chat, with their decision ("Name - Company - Decision"), and the Target count per company. I will paste this into the next chat.
 - Then wait for my go-ahead before you start the next batch.
 - When the search results run out, send the last batch even if it has fewer than 30 Targets, with the same extras.
 
 ALREADY REVIEWED LOG (from previous chats; skip these people and keep their company counts)
 [PASTE THE LOG HERE, OR WRITE "none" FOR THE FIRST CHAT]
 
-STEP CUSTOMER LIST (company names; one per line)
-[PASTE THE LIST FROM "Unit of Measure - STEP customer companies.txt" HERE]
+STEP CUSTOMER LIST
+The list has company names in three columns. Check all three:
+- Column K: the 2026 STEP customer list (most recent).
+- Column E: the 2025 STEP customer list.
+- Column A: an older list. It also contains rows that are not STEP customers (for example large companies added by mistake), people's names and LinkedIn links. Ignore rows that are a person or a link.
+Ignore all other columns.
+If a person's company is found in column K or E, it counts as a STEP customer. If it is found ONLY in column A, mark the person Maybe with the note "older list only" instead of Target.
+[PASTE COLUMNS A, E AND K HERE, OR NAME THE TAB WHERE THE LIST IS OPEN]
 ```
 
 ---
 
-## 4. After each batch
+## 4. After each batch (for you, not for Claude)
 
 - Save the CSV and upload it to the campaign in the automation tool. Check that the first names and company names read naturally in Message 1 before you upload.
-- Keep the Maybe tables in the report (e.g. a "Darrix – existing contacts" tab). Review the Maybe rows yourself, especially "STEP mentioned, company not on list" and "company match unsure".
+- Keep the Maybe tables in the report (e.g. a "Darrix - existing contacts" tab). Review the Maybe rows yourself, especially "STEP mentioned, company not on list" and "company match unsure".
 - Keep the latest ALREADY REVIEWED log, and paste it into the next chat (next day, or Search B / C).
