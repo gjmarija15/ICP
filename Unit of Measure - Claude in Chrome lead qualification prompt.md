@@ -27,7 +27,8 @@ Do not exclude the Marketing, Customer Success and Support, Administrative or Co
 If Sales Navigator rejects or cuts a boolean, split it in half and run the halves as separate searches.
 
 **Before you paste the prompt:**
-- Give Claude the STEP customer list. Either paste the company columns (A, E and K) from your CSV at the marked place at the bottom of the prompt, or open the list as a Google Sheet in another tab and tell Claude which tab. Paste only those three columns, not the whole CSV: the other columns (websites, LinkedIn page links, search strings) only make the prompt longer.
+- Attach the STEP customer list CSV (company names in columns A, E and K) to the same message as the prompt.
+- At the start of the first chat, before Claude reviews any profiles, ask it to create a test .csv file with just the column names, to check that it can make downloadable files.
 - For Search B, Search C, or any new chat after the first, also paste the "already reviewed" log from the previous chat at the marked place, so Claude skips those people and keeps the 4-per-company count.
 
 ## 2. LinkedIn safety (for you, read before running)
@@ -54,7 +55,7 @@ The open tab is a Sales Navigator lead search of Martin's 1st-degree connections
 
 For each person:
 1. Open their profile. Look at ALL their current (present) positions, not only the first one. People often hold more than one current role.
-2. For each current position, check the company: it must be on the STEP CUSTOMER LIST at the bottom of this prompt. Follow the COMPANY MATCHING rules below; names will often not match exactly.
+2. For each current position, check the company: it must be on the STEP CUSTOMER LIST (the attached CSV file, see the bottom of this prompt). Follow the COMPANY MATCHING rules below; names will often not match exactly.
    - If no current company is on the list, but the profile clearly says they work with STEP or Stibo in a current role at a company (not a consultancy), mark them Maybe with the note "STEP mentioned, company not on list".
    - If none of their current positions is at a company on the list, mark Skip.
 3. For the current position at the STEP customer, read the title, the description of that position, the headline, the About section and the skills. Use "View LinkedIn profile" only when the Sales Navigator page does not show enough to decide.
@@ -108,7 +109,7 @@ SAFETY (Martin's account must not be restricted)
 - If LinkedIn shows any warning, a CAPTCHA, a verification request, a "commercial use limit" or "unusual activity" message, logs out, or a page fails to load more than once, STOP IMMEDIATELY and tell me. Do not retry.
 
 BATCHES AND CSV
-- Collect Targets. As soon as you have 30 Targets, pause and send me the batch as a CSV in a code block, so I can save it as a .csv file and upload it to the campaign.
+- Collect Targets. As soon as you have 30 Targets, pause and create the batch as a downloadable .csv file (UTF-8 encoding, comma-separated, first row = column names), named "Darrix batch [number] - [date].csv", ready to upload to the campaign without any changes. If you cannot create a downloadable file, tell me straight away, then give me the CSV text in a code block instead.
 - CSV columns, in this order:
   first_name,last_name,company_name,title,linkedin_url,sales_navigator_url,matched_step_customer,tier,evidence
   - first_name: the person's first name only, as they would be greeted, with no emojis, titles (Dr., Ing.), credentials or extra symbols.
@@ -128,13 +129,11 @@ ALREADY REVIEWED LOG (from previous chats; skip these people and keep their comp
 [PASTE THE LOG HERE, OR WRITE "none" FOR THE FIRST CHAT]
 
 STEP CUSTOMER LIST
-The list has company names in three columns. Check all three:
-- Column K: the 2026 STEP customer list (most recent).
+The STEP customer list is the CSV file attached to this message. Company names are in three columns, and you must check all three:
+- Column A: the older STEP customer list.
 - Column E: the 2025 STEP customer list.
-- Column A: an older list. It also contains rows that are not STEP customers (for example large companies added by mistake), people's names and LinkedIn links. Ignore rows that are a person or a link.
-Ignore all other columns.
-If a person's company is found in column K or E, it counts as a STEP customer. If it is found ONLY in column A, mark the person Maybe with the note "older list only" instead of Target.
-[PASTE COLUMNS A, E AND K HERE, OR NAME THE TAB WHERE THE LIST IS OPEN]
+- Column K: the 2026 STEP customer list.
+A company found in ANY of these three columns counts as a STEP customer. Ignore all other columns, and ignore any cell in these columns that is a person's name or a link rather than a company name.
 ```
 
 ---
