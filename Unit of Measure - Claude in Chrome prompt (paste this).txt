@@ -60,7 +60,7 @@ SAFETY (Martin's account must not be restricted)
 - One profile at a time, in one tab. Do not open many profiles at once.
 - Wait 20 to 40 seconds between profiles, varying the time, and scroll the profile at a normal reading pace.
 - After every 25 profiles, take a break of 5 to 10 minutes.
-- Stop for the day after 100 profiles, or earlier if I tell you a lower limit. Tell me where you stopped.
+- Stop for the day after 100 profiles, or earlier if I tell you a lower limit. When you stop, send me the Targets found so far as a CSV file (same format as a batch, even if there are fewer than 30), the Maybe table, and the ALREADY REVIEWED log, and tell me which page and person you stopped at.
 - If LinkedIn shows any warning, a CAPTCHA, a verification request, a "commercial use limit" or "unusual activity" message, logs out, or a page fails to load more than once, STOP IMMEDIATELY and tell me. Do not retry.
 
 BATCHES AND CSV
