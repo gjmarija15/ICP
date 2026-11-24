@@ -16,6 +16,7 @@ Rules agreed with the team for writing client Outreach Messages documents.
 - Never use AI-sounding words, e.g. "radar", "leverage", "seamless", "streamline", "unlock".
 - Write from the person whose profile sends the messages.
 - Explain a fact before referring to it in a later message; not every prospect gets every version.
+- Never use apologetic lines ("sorry to bother you", "if now isn't the right time", "no problem if you don't need it", "last message from me"). If it weren't the right time, we wouldn't be writing. The last message ends with a direct CTA (book a call, with the calendar link), not by closing the door.
 - LinkedIn: conversational, easy-to-answer questions. Email: an intro of who we are and why we're writing, then a direct ask (call or free offer). Nobody wants to chat over email.
 
 ## Truth
